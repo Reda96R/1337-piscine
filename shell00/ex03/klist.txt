@@ -1,0 +1,5 @@
+Credentials cache: API:4262
+        Principal: rrayyad@1337.MA
+
+  Issued                Expires             Flags    Principal
+Aug  2 20:14:21 2021  Aug  9 20:13:16 2021  FPIA   krbtgt/1337.MA@1337.MA
