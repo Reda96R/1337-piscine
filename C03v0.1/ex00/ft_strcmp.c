@@ -27,8 +27,8 @@ int	ft_strcmp(char *s1, char *s2)
 #include<stdio.h>
 int	main()
 {
-	char s1[] = "0abc";
-	char s2[] = "abcd";
+	char s1[] = "abc";
+	char s2[] = "abc";
 	printf("%d", ft_strcmp(s1, s2));
 	return (0);	
 }

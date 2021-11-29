@@ -26,3 +26,7 @@ void	ft_print_numbers(void)
 		x++;
 	}
 }
+int	main()
+{
+	ft_print_numbers();
+}
