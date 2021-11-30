@@ -1,2 +1,2 @@
 # 1337-picsine
-in this repo I share with you my work during piscine aug 1337 benguerir
+in this repo I shared with you my work during aug 2021 piscine at 1337 brnguerir
