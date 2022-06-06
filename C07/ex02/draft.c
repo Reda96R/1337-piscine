@@ -39,6 +39,6 @@ int	ft_ultimate_range(int **range, int min, int max)
 int main()
 {
 	int *ptr;
-	int i = 0;
+	int i = 89;
 	printf("%d", ft_ultimate_range(&ptr, 50, 100));
 }
