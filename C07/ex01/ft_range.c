@@ -9,7 +9,7 @@
 /*   Updated: 2021/08/25 17:27:24 by rrayyad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include<stdio.h>
+//#include<stdio.h>
 #include<stdlib.h>
 int	*ft_range(int min, int max)
 {
@@ -34,7 +34,7 @@ int	*ft_range(int min, int max)
 		return (ptr);
 }
 
-int	main()
+/*int	main()
 {
 	int	i = 0;
 	int *ptr;
@@ -45,3 +45,4 @@ int	main()
 	i++;
 	}
 }
+*/
