@@ -3,46 +3,46 @@
 /*                                                        :::      ::::::::   */
 /*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rrayyad <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rerayyad <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/25 15:23:15 by rrayyad           #+#    #+#             */
-/*   Updated: 2021/08/25 17:27:24 by rrayyad          ###   ########.fr       */
+/*   Created: 2022/08/09 17:41:02 by rerayyad          #+#    #+#             */
+/*   Updated: 2022/08/09 17:41:03 by rerayyad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-//#include<stdio.h>
+
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rerayyad <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/08/01 10:48:31 by rerayyad          #+#    #+#             */
+/*   Updated: 2022/08/08 14:17:56 by rerayyad         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include<stdlib.h>
+
 int	*ft_range(int min, int max)
 {
+	int	*tab;
 	int	i;
 
-	i = 0;
-	int *ptr;
-	if (max - min <= 0)
+	if (min >= max)
 	{
-		ptr = NULL;
-		return (ptr);
+		tab = NULL;
+		return (tab);
 	}
-	ptr = (int*) malloc(sizeof (int) * (max - min));
-	if (ptr == NULL)
+	tab = (int *) malloc(sizeof (int) * (max - min));
+	if (!tab)
 		return (0);
-	while (min < max)
+	i = 0;
+	while (max > min)
 	{
-		ptr[i] = min;
+		tab[i] = min;
 		i++;
 		min++;
 	}
-		return (ptr);
+	return (tab);
 }
-
-/*int	main()
-{
-	int	i = 0;
-	int *ptr;
-	ptr = ft_range(0, 100);
-	while (i < 100)
-	{
-	printf("%d", ptr[i]);
-	i++;
-	}
-}
-*/
